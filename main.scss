@@ -1,0 +1,52 @@
+body,
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+}
+
+#firstDiv {
+	animation: roll 3s infinite;
+	background-color: #FA9F32;
+}
+
+#secondDiv {
+	animation: roll 3s infinite;
+	animation-delay: 1s;
+	background-color: #E37A38;
+}
+
+#thirdDiv {
+	animation: roll 3s infinite;
+	animation-delay: 2s;
+	background-color: #FA5F32;
+}
+
+.element {
+	display: inline-block;
+	background-color: #0074d9;
+	height: 200px;
+	width: 150px;
+	font-size: 1px;
+	padding: 1px;
+	color: white;
+	margin-right: 5px;
+	margin-left: 5px;
+	//animation: roll 3s infinite;
+	transform: rotate(30deg);
+	opacity: .7;
+}
+
+@keyframes roll {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(540deg);
+	}
+}
